@@ -19,7 +19,6 @@ export default defineConfig(({ mode }) => {
         host: true,
         proxy: {
           '/api': {
-            target: 'https:/renteaseapptestapi.onrender.com',
             changeOrigin: true,
             secure: false,
           }
