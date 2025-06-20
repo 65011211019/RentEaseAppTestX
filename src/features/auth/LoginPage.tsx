@@ -47,7 +47,7 @@ const LoginPage: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post<LoginResponse>('https:/renteaseapptestapi.onrender.com/api/auth/login', formData);
+      const response = await axios.post<LoginResponse>('https://renteaseapptestapi.onrender.com/api/auth/login', formData);
       
       if (response.data.success) {
         // Store the access token

@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
         ],
         proxy: {
           '/api': {
-            target: 'https:/renteaseapptestapi.onrender.com',
+            target: 'https://renteaseapptestapi.onrender.com',
             changeOrigin: true,
             secure: false,
           }

@@ -31,7 +31,7 @@ export const ChatInboxPage: React.FC = () => {
   // Realtime: listen for conversation updates
   useEffect(() => {
     if (!user?.id) return;
-    const socket = io(process.env.VITE_SOCKET_URL || 'https:/renteaseapptestapi.onrender.com', {
+    const socket = io(process.env.VITE_SOCKET_URL || 'https://renteaseapptestapi.onrender.com', {
       auth: { token: localStorage.getItem('authToken') },
       transports: ['websocket']
     });

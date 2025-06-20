@@ -72,7 +72,7 @@ export const SearchPage: React.FC = () => {
         setProvinces(provs.data);
 
         // Fetch all products
-        const response = await fetch('https:/renteaseapptestapi.onrender.com/api/products');
+        const response = await fetch('https://renteaseapptestapi.onrender.com/api/products');
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }

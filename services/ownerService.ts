@@ -3,7 +3,7 @@ import { MOCK_USER_ID } from '../constants';
 import { ApiResponse } from '../types';
 import { handleApiResponse } from './api';
 
-const API_BASE_URL = 'https:/renteaseapptestapi.onrender.com/api';
+const API_BASE_URL = 'https://renteaseapptestapi.onrender.com/api';
 
 export const getOwnerDashboardData = async (ownerId: number): Promise<ApiResponse<OwnerDashboardData>> => {
     try {
@@ -468,7 +468,7 @@ export const getPayoutMethodsByOwnerId = async (ownerId: number): Promise<Payout
     if (!token) {
         throw new Error('No authentication token found');
     }
-    const response = await fetch(`https:/renteaseapptestapi.onrender.com/api/owners/${ownerId}/payout-methods`, {
+    const response = await fetch(`https://renteaseapptestapi.onrender.com/api/owners/${ownerId}/payout-methods`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

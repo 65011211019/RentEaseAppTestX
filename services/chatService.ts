@@ -38,7 +38,7 @@ let mockMessages: { [conversationId: string]: ChatMessage[] } = {
     ]
 };
 
-const API_BASE_URL = process.env.VITE_API_URL || 'https:/renteaseapptestapi.onrender.com/api';
+const API_BASE_URL = process.env.VITE_API_URL || 'https://renteaseapptestapi.onrender.com/api';
 
 export const getConversations = async (params: { q?: string, page?: number, limit?: number }): Promise<PaginatedResponse<ChatConversation>> => {
     const token = localStorage.getItem('authToken');

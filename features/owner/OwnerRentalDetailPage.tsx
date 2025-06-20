@@ -150,7 +150,7 @@ export const OwnerRentalDetailPage: React.FC = () => {
     setError(null);
     try {
       const token = localStorage.getItem('authToken');
-      await fetch(`${process.env.VITE_API_URL || 'https:/renteaseapptestapi.onrender.com/api'}/rentals/${rental.id}/verify-payment`, {
+      await fetch(`${process.env.VITE_API_URL || 'https://renteaseapptestapi.onrender.com/api'}/rentals/${rental.id}/verify-payment`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`,

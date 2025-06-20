@@ -1,7 +1,7 @@
 import { User, Product, Rental, Category, PaginatedResponse, UserIdVerificationStatus, ProductAdminApprovalStatus } from '../types';
 import axios from 'axios';
 
-const API_URL = 'https:/renteaseapptestapi.onrender.com/api';
+const API_URL = 'https://renteaseapptestapi.onrender.com/api';
 
 // Create axios instance with base URL
 const api = axios.create({

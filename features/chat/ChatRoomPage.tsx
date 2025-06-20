@@ -84,7 +84,7 @@ export const ChatRoomPage: React.FC = () => {
 
   useEffect(() => {
     // Connect socket.io
-    const socket = io(process.env.VITE_SOCKET_URL || 'https:/renteaseapptestapi.onrender.com', {
+    const socket = io(process.env.VITE_SOCKET_URL || 'https://renteaseapptestapi.onrender.com', {
       auth: { token: localStorage.getItem('authToken') },
       transports: ['websocket']
     });
