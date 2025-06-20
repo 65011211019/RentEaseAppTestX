@@ -17,10 +17,6 @@ export default defineConfig(({ mode }) => {
         port: 5173,
         strictPort: true,
         host: true,
-        allowedHosts: [
-          'localhost',
-          'renteaseapptestx.onrender.com',
-        ],
         proxy: {
           '/api': {
             target: 'https://renteaseapptestapi.onrender.com',
@@ -28,6 +24,6 @@ export default defineConfig(({ mode }) => {
             secure: false,
           }
         }
-      },
+      }
     };
 });

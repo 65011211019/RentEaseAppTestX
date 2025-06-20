@@ -10,7 +10,7 @@ let mockConversations: ChatConversation[] = [
         last_message_content: "Hi, is this laptop still available for next week?",
         last_message_at: new Date(Date.now() - 3600000 * 2).toISOString(), // 2 hours ago
         p2_unread_count: 1, // Unread for MOCK_USER_ID
-        other_user: { id: 2, first_name: "Jane D.", last_name: "", profile_picture_url: "https://picsum.photos/seed/user2/50/50" },
+        other_user: { id: 2, first_name: "Jane D.", profile_picture_url: "https://picsum.photos/seed/user2/50/50" },
         related_product_title: "High-Performance Laptop XL2000",
     },
     {
@@ -21,7 +21,7 @@ let mockConversations: ChatConversation[] = [
         last_message_content: "Okay, see you tomorrow for the pickup!",
         last_message_at: new Date(Date.now() - 3600000 * 24).toISOString(), // 1 day ago
         p1_unread_count: 0,
-        other_user: { id: 3, first_name: "Mike B.", last_name: "", profile_picture_url: "https://picsum.photos/seed/user3/50/50" },
+        other_user: { id: 3, first_name: "Mike B.", profile_picture_url: "https://picsum.photos/seed/user3/50/50" },
         related_product_title: "City Cruiser Bicycle",
     }
 ];

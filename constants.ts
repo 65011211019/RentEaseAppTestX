@@ -73,10 +73,7 @@ export const ROUTE_PATHS = {
   CONTACT_US: '/contact',
 } as const;
 
-export const API_URL = process.env.NODE_ENV === "production"
-  ? "https://your-api-domain.com"
-  : "http://localhost:3000";
-
+export const API_BASE_URL = 'https://renteaseapptestapi.onrender.com/api'; // Updated to use the actual API server
 export const MOCK_USER_ID = 1; // For services that need a logged-in user context
 export const MOCK_ADMIN_USER_ID = 99; // For admin actions in mocks
 
