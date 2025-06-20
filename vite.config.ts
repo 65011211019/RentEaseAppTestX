@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
         port: 5173,
         strictPort: true,
         host: true,
+        allowedHosts: ['renteaseapptestx.onrender.com'],
         proxy: {
           '/api': {
             target: 'https://renteaseapptestapi.onrender.com',
